@@ -1,0 +1,14 @@
+# Secrets — never commit
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Dependencies and build output (per-demo)
+node_modules/
+dist/
+*.tsbuildinfo
+
+# OS and editor
+.DS_Store
+*.log
