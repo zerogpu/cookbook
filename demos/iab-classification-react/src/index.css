@@ -1,0 +1,241 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, sans-serif;
+  background: #0f1419;
+  color: #e6edf3;
+  min-height: 100vh;
+}
+
+#root {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0 0 0.5rem;
+}
+
+.subtitle {
+  color: #8b949e;
+  font-size: 0.9rem;
+  margin-bottom: 1.5rem;
+}
+
+.credentials {
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.credentials label {
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.credentials label:last-of-type {
+  margin-bottom: 0.5rem;
+}
+
+.credentials span {
+  display: block;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #8b949e;
+  margin-bottom: 0.35rem;
+}
+
+.credentials input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  font: inherit;
+  font-size: 0.9rem;
+  background: #0f1419;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: #e6edf3;
+}
+
+.credentials input::placeholder {
+  color: #6e7681;
+}
+
+.credentials-hint {
+  margin: 0;
+  font-size: 0.8rem;
+  color: #6e7681;
+}
+
+.credentials-hint a {
+  color: #58a6ff;
+}
+
+textarea {
+  width: 100%;
+  min-height: 140px;
+  padding: 0.75rem 1rem;
+  font: inherit;
+  font-size: 0.95rem;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+  color: #e6edf3;
+  resize: vertical;
+  margin-bottom: 1rem;
+}
+
+textarea::placeholder {
+  color: #6e7681;
+}
+
+.input-hint {
+  margin: -0.5rem 0 1rem;
+  font-size: 0.8rem;
+  color: #6e7681;
+}
+
+button {
+  padding: 0.6rem 1.2rem;
+  font-size: 0.95rem;
+  font-weight: 500;
+  background: #22c55e;
+  color: #000;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #4ade80;
+}
+
+button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.result {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 8px;
+}
+
+.result-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.result h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.btn-copy {
+  padding: 0.35rem 0.6rem;
+  font-size: 0.8rem;
+  background: #21262d;
+  color: #e6edf3;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.btn-copy:hover {
+  background: #30363d;
+}
+
+.result pre,
+.result p {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.result-raw {
+  font-family: ui-monospace, monospace;
+  font-size: 0.85rem;
+}
+
+/* Structured IAB output */
+.iab-structured {
+  font-size: 0.9rem;
+}
+
+.iab-section {
+  margin-bottom: 1rem;
+}
+
+.iab-section:last-child {
+  margin-bottom: 0;
+}
+
+.iab-section h3 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  color: #8b949e;
+  margin: 0 0 0.5rem;
+}
+
+.iab-list {
+  margin: 0;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.iab-list li {
+  margin-bottom: 0.35rem;
+  line-height: 1.4;
+}
+
+.iab-name {
+  color: #e6edf3;
+}
+
+.iab-meta {
+  color: #8b949e;
+  font-size: 0.9em;
+}
+
+.iab-score {
+  color: #7ee787;
+  font-size: 0.85em;
+  margin-left: 0.35rem;
+}
+
+.iab-keywords,
+.iab-intent {
+  margin: 0;
+  color: #8b949e;
+  font-size: 0.9em;
+}
+
+.usage {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid #30363d;
+  font-size: 0.85rem;
+  color: #8b949e;
+}
+
+.error {
+  color: #f85149;
+  margin-top: 1rem;
+}
