@@ -1,0 +1,8 @@
+outputs/
+__pycache__/
+.venv/
+scripts/.venv/
+
+# Optional local files (not part of the public tutorial)
+video-script.md
+social-promotion.md
