@@ -17,7 +17,7 @@ The step-by-step guide lives in the docs site: [cookbook/data-extraction-tutoria
 
 ## Quick start
 
-1. Create a project and API key in the [ZeroGPU dashboard](https://zerogpu.ai).
+1. Create an API key in the [ZeroGPU dashboard](https://zerogpu.ai).
 2. From this directory:
 
 ```bash
@@ -25,7 +25,6 @@ cd scripts
 python3 -m venv .venv
 .venv/bin/pip install -r requirements.txt
 export ZEROGPU_API_KEY="zgpu-your-key"
-export ZEROGPU_PROJECT_ID="your-project-uuid"
 ```
 
 3. Run extraction on sample resumes or profiles:

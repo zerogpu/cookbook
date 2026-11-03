@@ -85,8 +85,9 @@ def call_api(
     headers = {
         "content-type": "application/json",
         "x-api-key": api_key,
-        "x-project-id": project_id,
     }
+    if project_id:  # optional: scopes the request to a specific project
+        headers["x-project-id"] = project_id
     payload = {
         "model": model,
         "input": text,
@@ -156,7 +157,7 @@ def main() -> None:
     args = parser.parse_args()
 
     api_key = require_env("ZEROGPU_API_KEY")
-    project_id = require_env("ZEROGPU_PROJECT_ID")
+    project_id = os.environ.get("ZEROGPU_PROJECT_ID", "").strip()  # optional
 
     config = DATASETS[args.dataset]
     path = DATASET_DIR / config["file"]
